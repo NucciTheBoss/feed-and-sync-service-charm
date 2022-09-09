@@ -1,0 +1,11 @@
+# Copyright 2022 Canonical
+# See LICENSE file for licensing details.
+
+options:
+  max-cycles:
+    description: Maximum number of cycles to pass the token.
+    type: int
+  delay:
+    default: 0
+    description: How long to delay the token before passing it to the next unit.
+    type: float

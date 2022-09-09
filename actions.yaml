@@ -1,0 +1,57 @@
+# Copyright 2022 Canonical
+# See LICENSE file for licensing details.
+
+# For Feed-and-Sync
+ping:
+  description: >
+    Start a game of ping pong with the other units in the model.
+  params:
+    token:
+      description: Token to pass between units.
+      type: string
+      default: ""
+  required: [token]
+  additionalProperties: false
+  type: object
+
+# For ServiceCharm base
+restart:
+  description: Restart services.
+  params:
+    force:
+      description: Force action.
+      type: boolean
+      default: false
+    sync:
+      description: Sync configuration.
+      type: boolean
+      default: false
+
+set-sync-status:
+  description: Set sync status (debugging).
+  params:
+    key:
+      description: Sync key.
+      type: string
+    value:
+      description: Sync status.
+      type: boolean
+
+start:
+  description: Start services.
+
+stop:
+  description: Stop services.
+  params:
+    force:
+      description: Force action.
+      type: boolean
+      default: false
+
+sync:
+  description: Sync configuration.
+  params:
+    force:
+      description: Force action.
+      type: boolean
+      default: false

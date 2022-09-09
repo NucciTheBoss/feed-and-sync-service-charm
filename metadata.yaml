@@ -1,0 +1,18 @@
+# Copyright 2022 Canonical
+# See LICENSE file for licensing details.
+
+name: feed-and-sync
+display-name: |
+  Feed-and-Sync
+description: |
+  Ping pong with cloud software now with ServiceCharm!
+summary: |
+  A fun game of ping pong with multiple units now with ServiceCharm!
+provides:
+  ping-send:
+    interface: ping
+    limit: 1
+requires:
+  ping-receive:
+    interface: ping
+    limit: 1
